@@ -1,0 +1,11 @@
+set(PROG_NAME chapter_05_p3)
+set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+
+set(SOURCE_FILES
+    ${SRC_DIR}/p3.c
+)
+
+add_executable(${PROG_NAME} ${SOURCE_FILES})
+
+install(TARGETS ${PROG_NAME}
+        RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/chapter_05/p3)
